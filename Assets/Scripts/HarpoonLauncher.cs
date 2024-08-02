@@ -15,6 +15,13 @@ public class HarpoonLauncher : MonoBehaviour
     private bool canCastHarpoon = true;
     private float currentLength = 0f;
 
+    private GetMaterials getMaterials;
+
+    private void Start()
+    {
+        getMaterials = player.GetComponent<GetMaterials>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && canCastHarpoon)
@@ -66,6 +73,7 @@ public class HarpoonLauncher : MonoBehaviour
         if (hit.collider != null && hit.collider.CompareTag("Debris"))
         {
             Collect(hit.collider.gameObject);
+            HideHarpoon();
             StartRetracting();
             StartCoroutine(ResetHarpoonAfterDelay());
         }
@@ -94,13 +102,18 @@ public class HarpoonLauncher : MonoBehaviour
 
     void Collect(GameObject debris)
     {
-        // Implement your collect logic here
-        Debug.Log("Collected debris: " + debris.name);
+        getMaterials.ProcessMaterials(debris);
     }
 
     IEnumerator ResetHarpoonAfterDelay()
     {
         yield return new WaitForSeconds(recastDelay);
         canCastHarpoon = true;
+    }
+
+    void HideHarpoon()
+    {
+        isHarpoonActive = false;
+        lineRenderer.positionCount = 0;
     }
 }
