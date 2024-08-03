@@ -1860,6 +1860,14 @@ PrefabInstance:
       propertyPath: HealthText
       value: 
       objectReference: {fileID: 990326691}
+    - target: {fileID: 2957204077310580934, guid: a2b0b99c156168749ae1e25007a33e5d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957204077310580934, guid: a2b0b99c156168749ae1e25007a33e5d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2957204077310580935, guid: a2b0b99c156168749ae1e25007a33e5d, type: 3}
       propertyPath: m_Color.b
       value: 0
