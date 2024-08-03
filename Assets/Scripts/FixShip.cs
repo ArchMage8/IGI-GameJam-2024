@@ -49,6 +49,13 @@ public class FixShip : MonoBehaviour
         materials.CollectedPlastic -= PlasticCost;
         materials.CollectedElectronic -= ElectronicCost;
 
-        shipHealth.Health += healing;
+        if (shipHealth.Health < 100)
+        {
+            shipHealth.Health += healing;
+        }
+        else
+        {
+            shipHealth.Health = 100;
+        }
     }
 }
