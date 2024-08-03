@@ -4,7 +4,7 @@ public class TopDownMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
-    Vector2 movement;
+    [HideInInspector] public Vector2 movement;
 
     public void Start()
     {

@@ -19,7 +19,6 @@ public class GetMaterials : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Test");
         UpgradeButton.SetActive(false);
     }
 

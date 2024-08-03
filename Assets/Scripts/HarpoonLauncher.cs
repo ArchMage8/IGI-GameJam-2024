@@ -7,7 +7,7 @@ public class HarpoonLauncher : MonoBehaviour
     public Transform player;
     public float harpoonSpeed = 5f;
     public float maxHarpoonLength = 10f;
-    public float recastDelay = 2f; // Delay before the harpoon can be recast after hitting an object
+    public float recastDelay = 2f;
 
     private Vector2 targetPosition;
     private bool isHarpoonActive = false;
@@ -16,10 +16,12 @@ public class HarpoonLauncher : MonoBehaviour
     private float currentLength = 0f;
 
     private GetMaterials getMaterials;
+    private TopDownMovement topDownMovement;
 
     private void Start()
     {
         getMaterials = player.GetComponent<GetMaterials>();
+        topDownMovement = player.GetComponent<TopDownMovement>();
     }
 
     void Update()
@@ -40,6 +42,11 @@ public class HarpoonLauncher : MonoBehaviour
             {
                 ExtendHarpoon();
             }
+            topDownMovement.enabled = false;
+        }
+        else
+        {
+            topDownMovement.enabled = true;
         }
     }
 
@@ -69,13 +76,17 @@ public class HarpoonLauncher : MonoBehaviour
             StartRetracting();
         }
 
-        RaycastHit2D hit = Physics2D.Raycast(player.position, direction, currentLength);
-        if (hit.collider != null && hit.collider.CompareTag("Debris"))
+        RaycastHit2D[] hits = Physics2D.RaycastAll(player.position, direction, currentLength);
+        foreach (RaycastHit2D hit in hits)
         {
-            Collect(hit.collider.gameObject);
-            HideHarpoon();
-            StartRetracting();
-            StartCoroutine(ResetHarpoonAfterDelay());
+            if (hit.collider != null && hit.collider.CompareTag("Debris"))
+            {
+                Collect(hit.collider.gameObject);
+                HideHarpoon();
+                StartRetracting();
+                StartCoroutine(ResetHarpoonAfterDelay());
+                break;
+            }
         }
     }
 
