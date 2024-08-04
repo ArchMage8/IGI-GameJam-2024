@@ -2707,8 +2707,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a2c3c8e75c3fa4896fcf60de09fb12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
-  sfxSounds: []
+  musicSounds:
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: 41326a09a43bf5a43a7b266c508db0b6, type: 3}
+  - name: Lv1
+    clip: {fileID: 8300000, guid: 1aae9b03c99344747b6bc7cf137c15d5, type: 3}
+  - name: Lv2
+    clip: {fileID: 8300000, guid: be8d6570492bfa443a36a213be993199, type: 3}
+  - name: Lv3
+    clip: {fileID: 8300000, guid: 4dfb8e0b01662ed489dfa63bd80bf104, type: 3}
+  sfxSounds:
+  - name: Lose
+    clip: {fileID: 8300000, guid: 11331d88426554c4a8d5239079b0d6ff, type: 3}
+  - name: Win
+    clip: {fileID: 8300000, guid: fa47f4d253167a144a0098686e41f58b, type: 3}
+  - name: Upgrade
+    clip: {fileID: 8300000, guid: f86d62e56f8bff74893f25062721c1fc, type: 3}
+  - name: Harpoon
+    clip: {fileID: 8300000, guid: 4afa46605ba224b4fadaf1b8fa57501d, type: 3}
+  - name: HullHit
+    clip: {fileID: 8300000, guid: 6fc3c53ae662ccc409bea2ecefeb3594, type: 3}
+  - name: HullNeedRepair
+    clip: {fileID: 8300000, guid: 665a6b983673caf4b849cc1923b2fedf, type: 3}
+  - name: HullLow
+    clip: {fileID: 8300000, guid: ca3692f3d8aa7424da487ca6c113212e, type: 3}
+  - name: Fix
+    clip: {fileID: 8300000, guid: 6fc3c53ae662ccc409bea2ecefeb3594, type: 3}
   loopSounds: []
   musicSource: {fileID: 1093114028}
   sfxSource: {fileID: 1009598655}

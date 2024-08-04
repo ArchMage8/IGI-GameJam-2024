@@ -312,7 +312,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The last light flickers...
+  m_Text: The long dark consumes you...
 --- !u!222 &155203518
 CanvasRenderer:
   m_ObjectHideFlags: 0
