@@ -34,7 +34,7 @@ public class GetMaterials : MonoBehaviour
     {
         UpdateText();
 
-        if (TargetSteel == CollectedSteel && TargetPlastic == CollectedPlastic && TargetElectronic == CollectedElectronic)
+        if (CollectedSteel >= TargetSteel && CollectedPlastic >= TargetPlastic && CollectedElectronic >= TargetElectronic)
         {
             UpgradeButton.SetActive(true);
         }
