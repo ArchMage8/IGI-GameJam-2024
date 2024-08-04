@@ -20,7 +20,15 @@ public class DebrisCollision : MonoBehaviour
             Debug.Log("Debris Hit");
             shipHealth.DealDamage(Damage);
             StartCoroutine(DestroyDebris(collision.gameObject));
-           
+
+            if (DamageEffect.instance != null)
+            {
+                DamageEffect.instance.CamShake();
+            }
+            else
+            {
+                Debug.LogError("We be missing the camera shake script");
+            }
         }
     }
 
