@@ -2165,8 +2165,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4726446251084128475, guid: cb6957c0183c3484a9b4df77b66c60c9, type: 3}
   m_PrefabInstance: {fileID: 3941277474425769294}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &678392396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,7 +2246,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &685821499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2317869952278244495, guid: 43db22c4c4c3dc447b973b4180e162cb, type: 3}
@@ -6096,11 +6093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTarget: 3
-<<<<<<< Updated upstream
-  transition: {fileID: 1089589300}
-=======
   transition: {fileID: 1478232475}
->>>>>>> Stashed changes
   isNextSceneWin: 0
 --- !u!95 &1495838623
 Animator:

@@ -10,17 +10,16 @@ public class LoadNext : MonoBehaviour
     private GameObject winHandler;
     public bool isNextSceneWin;
 
-<<<<<<< Updated upstream
 
     public void NextScene()
     {
         StartCoroutine(LoadScene());
-=======
+
+    }
     private void Start()
     {
         winHandler = WinHandler.instance.gameObject;
         winHandler.SetActive(false);
->>>>>>> Stashed changes
     }
     public void Upgrade()
     {

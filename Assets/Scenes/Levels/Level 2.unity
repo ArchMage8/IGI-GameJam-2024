@@ -6375,18 +6375,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09fabf33e28a5c748a9cf8ba00ef4396, type: 3}
-<<<<<<< Updated upstream
---- !u!1001 &1363642131
-=======
 --- !u!1001 &1366346351
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
     - target: {fileID: 4358677324624442552, guid: 917ecaf6fe5e2404394b12524d5fdf22, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -6441,62 +6436,6 @@ PrefabInstance:
 Animator:
   m_CorrespondingSourceObject: {fileID: 4190481589089723018, guid: 917ecaf6fe5e2404394b12524d5fdf22, type: 3}
   m_PrefabInstance: {fileID: 1363642131}
-=======
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784491, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457877474167784492, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-      propertyPath: m_Name
-      value: LevelLoader
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
---- !u!95 &1366346352 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 457877474121544278, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-  m_PrefabInstance: {fileID: 1366346351}
->>>>>>> Stashed changes
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400442471 stripped
 GameObject:
@@ -6820,11 +6759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTarget: 4
-<<<<<<< Updated upstream
-  transition: {fileID: 1363642132}
-=======
   transition: {fileID: 1366346352}
->>>>>>> Stashed changes
   isNextSceneWin: 0
 --- !u!95 &1495838623
 Animator:
