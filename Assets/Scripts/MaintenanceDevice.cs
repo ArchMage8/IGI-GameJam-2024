@@ -80,6 +80,12 @@ public class MaintenanceDevice : MonoBehaviour
 
         if (timer >= TempSecond)
         {
+
+            if (heavyWarning==false)
+            {
+                AudioManager.Instance.PlaySFX("HullLow");
+            }
+
             heavyWarning.SetActive(true);
             lightWarning.SetActive(false);
 
@@ -88,6 +94,11 @@ public class MaintenanceDevice : MonoBehaviour
         }
         else if (timer >= TempFirst)
         {
+            if (lightWarning==false)
+            {
+                AudioManager.Instance.PlaySFX("HullNeedRepair");
+            }
+
             lightWarning.SetActive(true);
             heavyWarning.SetActive(false);
         }
@@ -104,6 +115,8 @@ public class MaintenanceDevice : MonoBehaviour
         {
             interactUI.SetActive(true);
             playerInRange = true;
+            
+            AudioManager.Instance.PlaySFX("Chirp");
         }
     }
 
@@ -121,6 +134,7 @@ public class MaintenanceDevice : MonoBehaviour
         while (true)
         {
             shipHealth.DealDamage(Damage);
+            AudioManager.Instance.PlaySFX("HullBeep");
             yield return new WaitForSeconds(DamageDelay);
         }
     }

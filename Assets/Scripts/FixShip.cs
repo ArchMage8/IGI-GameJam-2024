@@ -45,6 +45,9 @@ public class FixShip : MonoBehaviour
 
     private void Fixing()
     {
+        AudioManager.Instance.PlaySFX("Fix");
+
+
         materials.CollectedSteel -= SteelCost;
         materials.CollectedPlastic -= PlasticCost;
         materials.CollectedElectronic -= ElectronicCost;

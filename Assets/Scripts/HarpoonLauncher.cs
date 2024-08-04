@@ -60,6 +60,7 @@ public class HarpoonLauncher : MonoBehaviour
         lineRenderer.SetPosition(0, player.position);
         lineRenderer.SetPosition(1, player.position);
         canCastHarpoon = false;
+        AudioManager.Instance.PlaySFX("Harpoon");
     }
 
     void ExtendHarpoon()

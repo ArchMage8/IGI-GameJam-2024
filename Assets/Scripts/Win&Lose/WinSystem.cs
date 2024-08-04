@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinSystem : MonoBehaviour
 {
-    private void Awake()
+    private void Start()
     {
         WinHandler.instance.CallStart();
     }
