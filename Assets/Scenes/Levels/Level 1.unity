@@ -550,7 +550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 225, y: 127.9}
+  m_AnchoredPosition: {x: 364.3, y: 127.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215283189
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /20
+  m_text: /15
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a83301caac6a7b4989a8867a0144070, type: 2}
   m_sharedMaterial: {fileID: 3017743203888383, guid: 3a83301caac6a7b4989a8867a0144070, type: 2}
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3122,7 +3122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /20
+  m_text: /15
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a83301caac6a7b4989a8867a0144070, type: 2}
   m_sharedMaterial: {fileID: 3017743203888383, guid: 3a83301caac6a7b4989a8867a0144070, type: 2}
@@ -3156,7 +3156,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3648,7 +3648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /20
+  m_text: /10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a83301caac6a7b4989a8867a0144070, type: 2}
   m_sharedMaterial: {fileID: 3017743203888383, guid: 3a83301caac6a7b4989a8867a0144070, type: 2}
@@ -3682,7 +3682,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5068,7 +5068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1294089140
 Transform:
   m_ObjectHideFlags: 0
@@ -5134,7 +5134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6426411686325680775, guid: fce02fa8a392fe545a7429cb010c2041, type: 3}
       propertyPath: secondThreshold
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6426411686325680792, guid: fce02fa8a392fe545a7429cb010c2041, type: 3}
       propertyPath: m_Size.x
@@ -5174,7 +5174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6426411686325680793, guid: fce02fa8a392fe545a7429cb010c2041, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6426411686325680794, guid: fce02fa8a392fe545a7429cb010c2041, type: 3}
       propertyPath: m_RootOrder
@@ -5762,6 +5762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneTarget: 0
   transition: {fileID: 0}
+  isNextSceneWin: 0
 --- !u!95 &1495838623
 Animator:
   serializedVersion: 5
@@ -6848,7 +6849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6337963766876153041, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: maxHarpoonLength
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6337963766876153042, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: m_Name
@@ -6880,11 +6881,11 @@ PrefabInstance:
       objectReference: {fileID: 1177781486}
     - target: {fileID: 6337963766876153054, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: TargetSteel
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6337963766876153054, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: TargetPlastic
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6337963766876153054, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: UpgradeButton
@@ -6892,7 +6893,7 @@ PrefabInstance:
       objectReference: {fileID: 1495838617}
     - target: {fileID: 6337963766876153054, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: TargetElectronic
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6337963766876153055, guid: 19474df5f2e82214aaedb80818a1b20e, type: 3}
       propertyPath: moveSpeed
