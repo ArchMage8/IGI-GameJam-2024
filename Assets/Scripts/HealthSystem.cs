@@ -22,7 +22,7 @@ public class HealthSystem : MonoBehaviour
         if (Health <= 0)
         {
             
-            
+            StartCoroutine(loadLoseScene());
         }
     }
 
@@ -40,7 +40,7 @@ public class HealthSystem : MonoBehaviour
     private IEnumerator loadLoseScene()
     {
         LoseHandler.instance.CallEnding();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.2f);
         SceneManager.LoadScene(loseScene);
     }
 }
