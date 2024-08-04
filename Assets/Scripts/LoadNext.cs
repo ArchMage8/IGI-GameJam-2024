@@ -11,16 +11,15 @@ public class LoadNext : MonoBehaviour
     public bool isNextSceneWin;
 
 
+   
+
+
     public void NextScene()
     {
         StartCoroutine(LoadScene());
 
     }
-    private void Start()
-    {
-        winHandler = WinHandler.instance.gameObject;
-        winHandler.SetActive(false);
-    }
+    
     public void Upgrade()
     {
         AudioManager.Instance.PlaySFX("Upgrade");
