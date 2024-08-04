@@ -21,5 +21,6 @@ public class LoseHandler : MonoBehaviour
     public void CallStart()
     {
         animator.SetTrigger("StartOfScene");
+        AudioManager.Instance.PlaySFX("Lose");
     }
 }

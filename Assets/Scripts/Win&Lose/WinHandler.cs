@@ -21,5 +21,6 @@ public class WinHandler : MonoBehaviour
     public void CallStart()
     {
         animator.SetTrigger("StartOfScene");
+        AudioManager.Instance.PlaySFX("Win");
     }
 }
