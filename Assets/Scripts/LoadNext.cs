@@ -62,8 +62,9 @@ public class LoadNext : MonoBehaviour
 
         else if (isNextSceneWin)
         {
-            winHandler.SetActive(true);
+            winHandler = WinHandler.instance.gameObject;
             WinHandler.instance.CallEnding();
+            winHandler.SetActive(true);
             yield return new WaitForSeconds(1.2f);
             SceneManager.LoadScene(sceneTarget);
 

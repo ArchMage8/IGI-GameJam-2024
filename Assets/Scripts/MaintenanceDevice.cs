@@ -61,7 +61,6 @@ public class MaintenanceDevice : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
 
-            Debug.Log("Repair");
             AudioManager.Instance.PlaySFX("Fix");
             
             timer = 0;
