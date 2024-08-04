@@ -4187,11 +4187,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917ecaf6fe5e2404394b12524d5fdf22, type: 3}
---- !u!95 &1089589300 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4190481589089723018, guid: 917ecaf6fe5e2404394b12524d5fdf22, type: 3}
-  m_PrefabInstance: {fileID: 1089589299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1091906506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,6 +5362,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6426411685919421807, guid: fce02fa8a392fe545a7429cb010c2041, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -257.52
+      objectReference: {fileID: 0}
     - target: {fileID: 6426411686119493913, guid: fce02fa8a392fe545a7429cb010c2041, type: 3}
       propertyPath: m_Camera
       value: 
@@ -5930,7 +5929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457877474167784492, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
@@ -6089,7 +6088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTarget: 3
-  transition: {fileID: 1089589300}
+  transition: {fileID: 0}
   isNextSceneWin: 0
 --- !u!95 &1495838623
 Animator:
