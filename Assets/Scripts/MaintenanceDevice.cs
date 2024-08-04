@@ -19,6 +19,7 @@ public class MaintenanceDevice : MonoBehaviour
     [Header("Ship Interact")]
     public HealthSystem shipHealth;
     public int Damage;
+    public float DamageDelay = 1f;
 
     private float timer;
     private bool playerInRange;
@@ -120,7 +121,7 @@ public class MaintenanceDevice : MonoBehaviour
         while (true)
         {
             shipHealth.DealDamage(Damage);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(DamageDelay);
         }
     }
 }

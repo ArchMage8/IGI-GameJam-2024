@@ -5,9 +5,9 @@ using TMPro;
 
 public class GetMaterials : MonoBehaviour
 {
-    [HideInInspector] public int CollectedSteel = 0;
-    [HideInInspector] public int CollectedElectronic = 0;
-    [HideInInspector] public int CollectedPlastic = 0;
+    /*[HideInInspector]*/ public int CollectedSteel = 0;
+    /*[HideInInspector]*/ public int CollectedElectronic = 0;
+    /*[HideInInspector]*/ public int CollectedPlastic = 0;
 
     [Header("Target Values")]
     public int TargetSteel = 0;
