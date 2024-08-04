@@ -2726,13 +2726,17 @@ MonoBehaviour:
   - name: Harpoon
     clip: {fileID: 8300000, guid: 4afa46605ba224b4fadaf1b8fa57501d, type: 3}
   - name: HullHit
-    clip: {fileID: 8300000, guid: 6fc3c53ae662ccc409bea2ecefeb3594, type: 3}
+    clip: {fileID: 8300000, guid: b4ecaaafd0a43bc4ab286de438979565, type: 3}
   - name: HullNeedRepair
     clip: {fileID: 8300000, guid: 665a6b983673caf4b849cc1923b2fedf, type: 3}
   - name: HullLow
     clip: {fileID: 8300000, guid: ca3692f3d8aa7424da487ca6c113212e, type: 3}
+  - name: HullBeep
+    clip: {fileID: 8300000, guid: b3d0f7d5594c7034eb8d69644a10fdf5, type: 3}
   - name: Fix
     clip: {fileID: 8300000, guid: 6fc3c53ae662ccc409bea2ecefeb3594, type: 3}
+  - name: Chirp
+    clip: {fileID: 8300000, guid: ed3bcefdcbb818b41a949aabbf618deb, type: 3}
   loopSounds: []
   musicSource: {fileID: 1093114028}
   sfxSource: {fileID: 1009598655}

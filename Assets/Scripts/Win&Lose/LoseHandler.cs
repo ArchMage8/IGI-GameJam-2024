@@ -7,7 +7,7 @@ public class LoseHandler : MonoBehaviour
     [HideInInspector] public static LoseHandler instance { get; private set; }
     private Animator animator;
 
-    private void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
         instance = this;

@@ -7,7 +7,7 @@ public class WinHandler : MonoBehaviour
     [HideInInspector] public static WinHandler instance { get; private set; }
     private Animator animator; 
 
-    private void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
         instance = this;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LoseSystem : MonoBehaviour
 {
-    private void Awake()
+    private void Start()
     {
         LoseHandler.instance.CallStart();
     }

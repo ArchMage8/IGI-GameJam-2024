@@ -24,6 +24,7 @@ public class DebrisCollision : MonoBehaviour
             if (DamageEffect.instance != null)
             {
                 DamageEffect.instance.CamShake();
+                AudioManager.Instance.PlaySFX("HullHit");
             }
             else
             {
