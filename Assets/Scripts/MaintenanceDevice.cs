@@ -62,6 +62,7 @@ public class MaintenanceDevice : MonoBehaviour
         {
 
             Debug.Log("Repair");
+            AudioManager.Instance.PlaySFX("Fix");
             
             timer = 0;
             lightWarning.SetActive(false);
@@ -81,10 +82,10 @@ public class MaintenanceDevice : MonoBehaviour
         if (timer >= TempSecond)
         {
 
-            if (heavyWarning==false)
-            {
-                AudioManager.Instance.PlaySFX("HullLow");
-            }
+            // if (heavyWarning==false)
+            // {
+            //     AudioManager.Instance.PlaySFX("HullLow");
+            // }
 
             heavyWarning.SetActive(true);
             lightWarning.SetActive(false);
@@ -94,10 +95,10 @@ public class MaintenanceDevice : MonoBehaviour
         }
         else if (timer >= TempFirst)
         {
-            if (lightWarning==false)
-            {
-                AudioManager.Instance.PlaySFX("HullNeedRepair");
-            }
+            // if (lightWarning==false)
+            // {
+            //     AudioManager.Instance.PlaySFX("HullNeedRepair");
+            // }
 
             lightWarning.SetActive(true);
             heavyWarning.SetActive(false);
