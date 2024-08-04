@@ -908,6 +908,7 @@ GameObject:
   - component: {fileID: 1335546858}
   - component: {fileID: 1335546857}
   - component: {fileID: 1335546856}
+  - component: {fileID: 1335546859}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -979,7 +980,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1335546857}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1335546859}
+        m_TargetAssemblyTypeName: LoadNext, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1335546857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,6 +1031,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335546854}
   m_CullTransparentMesh: 1
+--- !u!114 &1335546859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335546854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18bcc7ed7bc8964ea544a098e50b965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneTarget: 2
+  transition: {fileID: 4075173954685308576}
+  isNextSceneWin: 0
 --- !u!1 &1906464768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1058,7 @@ GameObject:
   - component: {fileID: 1906464772}
   - component: {fileID: 1906464771}
   - component: {fileID: 1906464770}
+  - component: {fileID: 1906464773}
   m_Layer: 5
   m_Name: Quit to Main Menu
   m_TagString: Untagged
@@ -1101,7 +1130,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1906464771}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1906464773}
+        m_TargetAssemblyTypeName: LoadNext, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1906464771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,6 +1181,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906464768}
   m_CullTransparentMesh: 1
+--- !u!114 &1906464773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906464768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18bcc7ed7bc8964ea544a098e50b965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneTarget: 0
+  transition: {fileID: 4075173954685308576}
+  isNextSceneWin: 0
 --- !u!1 &1926666575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,3 +1333,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fa2173152728ae4e8c52eccf636b5b8, type: 3}
+--- !u!95 &4075173954685308576 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 241954155033519672, guid: 7fa2173152728ae4e8c52eccf636b5b8, type: 3}
+  m_PrefabInstance: {fileID: 4075173954685308575}
+  m_PrefabAsset: {fileID: 0}

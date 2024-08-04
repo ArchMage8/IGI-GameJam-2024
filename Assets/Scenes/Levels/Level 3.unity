@@ -7789,7 +7789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTarget: 5
-  transition: {fileID: 2142664547}
+  transition: {fileID: 2042631554}
   isNextSceneWin: 1
 --- !u!95 &1495838623
 Animator:
@@ -10137,6 +10137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917ecaf6fe5e2404394b12524d5fdf22, type: 3}
+--- !u!95 &2042631554 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4190481589089723018, guid: 917ecaf6fe5e2404394b12524d5fdf22, type: 3}
+  m_PrefabInstance: {fileID: 2042631553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2045734505
 GameObject:
   m_ObjectHideFlags: 0
@@ -10626,6 +10631,10 @@ PrefabInstance:
     - target: {fileID: 2957204077310580932, guid: a2b0b99c156168749ae1e25007a33e5d, type: 3}
       propertyPath: Damage
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957204077310580933, guid: a2b0b99c156168749ae1e25007a33e5d, type: 3}
+      propertyPath: loseScene
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2957204077310580933, guid: a2b0b99c156168749ae1e25007a33e5d, type: 3}
       propertyPath: HealthText
@@ -11295,11 +11304,6 @@ RectTransform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4654608227657408783, guid: ba0fb02eabc526e44bf8707b73e7c679, type: 3}
   m_PrefabInstance: {fileID: 4016633263685434371}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2142664547 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 457877474121544278, guid: a76c60f306e367248b44ae32da62ce7a, type: 3}
-  m_PrefabInstance: {fileID: 1015389937}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2244906019884494628
 PrefabInstance:
