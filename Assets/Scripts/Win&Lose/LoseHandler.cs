@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LoseHandler : MonoBehaviour
 {
-    [HideInInspector]public static LoseHandler instance;
+    [HideInInspector] public static LoseHandler instance { get; private set; }
     private Animator animator;
 
     private void Start()
