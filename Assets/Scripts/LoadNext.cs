@@ -80,6 +80,8 @@ public class LoadNext : MonoBehaviour
 
         else if (isNextSceneWin)
         {
+            Debug.Log("piss");
+            winHandler = WinHandler.instance.gameObject;
             WinHandler.instance.CallEnding();
          
             yield return new WaitForSeconds(1.8f);
