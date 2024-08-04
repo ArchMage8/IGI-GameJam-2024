@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadNext : MonoBehaviour
 {
@@ -11,11 +12,28 @@ public class LoadNext : MonoBehaviour
     public bool isNextSceneWin;
 
 
-   
 
+    private void Awake()
+    {
+        Debug.Log("test");
+
+    }
 
     public void NextScene()
     {
+        if (isNextSceneWin)
+        {
+            winHandler = WinHandler.instance.gameObject;
+
+            Image image = winHandler.GetComponentInChildren<Image>();
+            Color color = image.color;
+            color.a = 0;
+            image.color = color;
+
+            winHandler.SetActive(true);
+            Debug.Log("Potato");
+           
+        }
         StartCoroutine(LoadScene());
 
     }
@@ -31,7 +49,7 @@ public class LoadNext : MonoBehaviour
         if (!isNextSceneWin)
         {
             transition.SetTrigger("EndOfScene");
-            yield return new WaitForSeconds(1.2f);
+            yield return new WaitForSeconds(1.4f);
             SceneManager.LoadScene(sceneTarget);
 
         switch (sceneTarget)
@@ -62,10 +80,9 @@ public class LoadNext : MonoBehaviour
 
         else if (isNextSceneWin)
         {
-            winHandler = WinHandler.instance.gameObject;
             WinHandler.instance.CallEnding();
-            winHandler.SetActive(true);
-            yield return new WaitForSeconds(1.2f);
+         
+            yield return new WaitForSeconds(1.8f);
             SceneManager.LoadScene(sceneTarget);
 
             AudioManager.Instance.StopMusic();
