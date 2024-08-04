@@ -7,13 +7,20 @@ public class LoadNext : MonoBehaviour
 {
     [SerializeField] int sceneTarget;
     public Animator transition;
-
+    private GameObject winHandler;
     public bool isNextSceneWin;
 
+<<<<<<< Updated upstream
 
     public void NextScene()
     {
         StartCoroutine(LoadScene());
+=======
+    private void Start()
+    {
+        winHandler = WinHandler.instance.gameObject;
+        winHandler.SetActive(false);
+>>>>>>> Stashed changes
     }
     public void Upgrade()
     {
@@ -57,6 +64,7 @@ public class LoadNext : MonoBehaviour
 
         else if (isNextSceneWin)
         {
+            winHandler.SetActive(true);
             WinHandler.instance.CallEnding();
             yield return new WaitForSeconds(1.2f);
             SceneManager.LoadScene(sceneTarget);

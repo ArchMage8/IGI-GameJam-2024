@@ -24,12 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level 3.unity
     guid: 64f211185ec75484c8dbca2d003fc075
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/LoseScreen.unity
     guid: ef5ceb4d40135124e93491a4844c7119
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: b32a3488a6f27404984e38b7a36b315e
   - enabled: 1
+=======
+    path: Assets/Scenes/WinScreen.unity
+    guid: b32a3488a6f27404984e38b7a36b315e
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: ef5ceb4d40135124e93491a4844c7119
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/Epilogue.unity
     guid: e94c539037391744d91665151c7a375c
   m_configObjects: {}

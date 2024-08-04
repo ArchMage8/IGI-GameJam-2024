@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+  HealthText: {fileID: 0}
+  loseScene: 6
 --- !u!114 &2957204077310580932
 MonoBehaviour:
   m_ObjectHideFlags: 0

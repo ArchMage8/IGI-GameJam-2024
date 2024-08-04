@@ -10,9 +10,13 @@ public class HealthSystem : MonoBehaviour
     public TMP_Text HealthText;
     public int loseScene;
 
+    private GameObject loseHandler;
+
     private void Start()
     {
         UpdateText();
+        loseHandler = LoseHandler.instance.gameObject;
+        loseHandler.SetActive(false);
     }
 
     private void Update()
@@ -39,6 +43,7 @@ public class HealthSystem : MonoBehaviour
 
     private IEnumerator loadLoseScene()
     {
+        loseHandler.SetActive(true);
         LoseHandler.instance.CallEnding();
         yield return new WaitForSeconds(1.2f);
         SceneManager.LoadScene(loseScene);
