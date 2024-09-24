@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DebriSpawner0
+  m_Name: DebriSpawner 05
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,19 +22,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -906.3
+        value: -313.04
         inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        outSlope: -3.3959992
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 10
-        value: -832.5
-        inSlope: 0
+        value: -347
+        inSlope: -3.3959992
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
@@ -50,19 +50,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 341.2
+        value: 115.69
         inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        outSlope: 0.93099976
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 10
-        value: 300
-        inSlope: 0
+        value: 125
+        inSlope: 0.93099976
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
@@ -122,19 +122,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -906.3
+        value: -313.04
         inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        outSlope: -3.3959992
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 10
-        value: -832.5
-        inSlope: 0
+        value: -347
+        inSlope: -3.3959992
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
@@ -150,19 +150,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 341.2
+        value: 115.69
         inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        outSlope: 0.93099976
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 10
-        value: 300
-        inSlope: 0
+        value: 125
+        inSlope: 0.93099976
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
